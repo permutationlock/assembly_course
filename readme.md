@@ -17,5 +17,5 @@ to correspond with a time that I was employed working on
 a horribly slow and complex JavaScript codebase.
 
 I try my best to make examples cross platform with Windows
-where I can, but I primarily work with Linux systems and Linux/POSIX
+where I can, but I primarily work with Linux systems and Unix/Linux
 is what the project focuses on.
