@@ -1,0 +1,6 @@
+[book]
+authors = ["Aven Bross"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Understanding Computer Applications"
