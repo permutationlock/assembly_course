@@ -1,21 +1,29 @@
-# Writing Computer Applications
+# Understanding computer applications: a simple ground-up guide
 
 In this project I compile a collection of thoughts and examples
 covering how to build computer applications from the ground up.
-Specifically, the project discusses basic x86 and ARM assembly
-language, operating system calls, networking, C, and basic
-graphics. The hope is to provide a guide for building fully
-functional applications while maintaining some
-understanding of what is happening on the hardware level.
+Specifically, the project discusses x86\_64 assembly
+language, C, and the Linux operating system.
+It covers how to create computer applications to run on modern
+systems using only the operating system kernel interface.
 
-The main inspiration for this project came after teaching a course on
-assembly language programming at the University of Alaska Fairbanks.
-Thinking about low level programming and operating systems drew me
-back to the joy of working closely with hardware and designing
-programs that I could feasibly reason about. This revelation happened
-to correspond with a time that I was employed working on
-a horribly slow and complex JavaScript codebase.
+Througohut the book we will build from scratch
 
-I try my best to make examples cross platform with Windows
-where I can, but I primarily work with Linux systems and Linux/POSIX
-is what the project focuses on.
+ - a custom C "standard" library indpendent of libc[^1];
+ - a set of command line utilities including a simple shell;
+ - a frame buffer rendered terminal emulator;
+ - a debugger and corresponding frame buffer GUI;
+ - a frame buffer compositor and tiling window manager;
+ - an online multiplayer videogame.
+
+In this way we will build a custom Linux based operating system from the ground
+up. Then we will show a simple way to adapt our graphical applications to target
+more common Linux window managers (X, Wayland). We'll also add an option for our
+library to use a
+linked libc instead of our custom x86\_64 syscall version, thus making it just
+as cross platform as libc. Some Windows APIs will be covered as well so our GUI
+can draw to the framebuffer of a window in Windows as well.
+
+[^1]: I call it a standard library for lack of a better term: it provides some
+    of the functionality of the C standard library while specifically choosing
+    to not follow the C standard.
